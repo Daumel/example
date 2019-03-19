@@ -3,6 +3,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class BugTests {
+	public static void main(String[] args) {
+
 	@Test
 	public void testMinimum1() {
 		// actual minimum: 1
@@ -18,5 +20,6 @@ public class BugTests {
 
 		// Expect IllegalArgumentException if called with empty array
 		assertThrows(IllegalArgumentException.class, () -> Bug.minimum(new int[0]));
+		}
 	}
 }
